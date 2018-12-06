@@ -27,3 +27,16 @@ class File2(File):
         self.item_dict['name'] = "omurice"
         self.item_dict['price'] = 980
 
+
+class File3(File):
+    """
+    File3 is an example.
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.name_template = "file3_{{ date|datetimeformat(%Y%m%d) }}.csv"
+        self.destination = "./tmp"
+        self.item_dict['country'] = "Japan"
+        self.item_dict['prefecture'] = "Tokyo"
+

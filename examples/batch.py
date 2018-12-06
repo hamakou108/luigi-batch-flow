@@ -14,3 +14,15 @@ class FirstBatch(Batch):
         ]
         self.script_path = "./examples/script/first_batch.sh"
 
+
+class SecondBatch(Batch):
+    """
+    SecondBatch is an example.
+    """
+
+    def __init__(self):
+        self.input_files = [
+            f.File3()
+        ]
+        self.script_path = "./examples/script/second_batch.sh"
+
